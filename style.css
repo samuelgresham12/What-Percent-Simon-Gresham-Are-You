@@ -1,0 +1,23 @@
+html, body {
+    background-image: url("gresham_simon.jpg");
+    height: 100%;
+}
+
+#body-holder { 
+    width: 70%;
+    background-color: #aec6cfc3 ;
+    height: 100%
+}
+
+#title {
+    text-align: center;
+}
+
+#next {
+    float: right;
+}
+
+#ans {
+    width:100%
+}
+

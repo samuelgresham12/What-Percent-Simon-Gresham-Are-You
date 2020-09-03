@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What % Simon Gresham are you?</title>
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class='container-fluid' id='body-holder'>
+    <p class='display-4' id='title'>What Percent Simon Gresham Are You?</p>
+    <hr style="height:2px;border-width:0;color:black;background-color:black">
+
+
+    <div id='question-area-1'>
+        <b class='display-4'>What is your name?</b> <br> <br>
+        <input type="text" placeholder="Your Name" class='form-control' id='name'> <br>
+        <button class='btn btn-primary' onclick='quiz1()' id='next'>Next -></button>
+    </div>
+
+    <div id='question-area-2' style='display: none;'>
+        <b class='display-4'>What do you say after eating a delicious soup?</b> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz2('A')">A. "That was a great soup!"</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz2('B')">B. "Thanks for making that soup!"</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz2('C')">C. "That is the best soup I have ever had!"</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz2('D')">D. Nothing</button>
+    </div>
+
+    <div id='question-area-3' style='display: none;'>
+        <b class='display-4'>What is this dish called?</b> <br>
+        <img src="goulash.jpg" alt="" srcset=""> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz3('A')">A. Curry</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz3('B')">B. Stew</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz3('C')">C. Soup</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz3('D')">D. Goulash</button>
+    </div>
+
+    <div id='question-area-4' style='display: none;'>
+        <b class='display-4'>Which IGA franchise is the best?</b> <p>(you don't have a choice)</p> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz4('A')">A. Romeo's IGA</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz4('B')">B. Romeo's IGA</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz4('C')">C. Romeo's IGA</button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz4('D')">D. Romeo's IGA</button>
+    </div>
+
+    <div id='question-area-5' style='display: none;'>
+        <b class='display-4'>Do you feel the need to laugh VERY loudly whilst on work calls?</p> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz5('A')">A. Yes! </button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz5('B')">B. No...</button> <br>
+    </div>
+
+    <div id='question-area-6' style='display: none;'>
+        <b class='display-4'>Are you the best dad ever?</p> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz6('A')">A. Yes! </button> <br>
+        <button id='ans' class='btn btn-secondary' onclick="quiz6('B')">B. Yes, but I'm too humble to say so.</button> <br>
+    </div>
+
+    <div id='results' style='display: none;'>
+        <p class='display-4' style='text-align: center;' id='nameResults'></p>
+        <p class='display-1' id='score' style='text-align: center;'=></p>
+        <p class='display-4' style='text-align: center;'>% Simon Gresham</p>
+    </div> <br>
+    <hr style="height:2px;border-width:0;color:black;background-color:black">
+    </div>
+</body>
+</html>
